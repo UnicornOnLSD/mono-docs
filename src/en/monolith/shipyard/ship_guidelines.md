@@ -85,7 +85,7 @@ It is **heavily recommended to consult a maintainer on whether your ship idea wi
 *Engineering*
 * Power source, (choose one below) note of their votality and use them as a weakpoint. <!-- Add image for votality examples below-->
   - Fueled generators: Jr PACMAN, PACMAN etc.. (using the [ship] prefix, multiple of the same kind is allowed) 
-  - Solar panels (can be paired with other power sources)
+  - Solar panels (any kind of glass is accepted, can be paired with other power sources)
   - AMEs
   - Jr.DK, DK, Z-pinch
   - **NO singularity/tesla**
