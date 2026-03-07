@@ -110,11 +110,11 @@ When mapping a ship, the most important part is keeping it consistent. Whatever 
   - (glass) Firelocks should be put under doors and linked to the two air alarms of the rooms they are connecting
   - same ruling for directionnal firelocks, except they are put against doors
   - All rooms with air vents & scrubbers should have an air alarm which they are connected to.
-  <!-- [R] Need to fact check the need for air sensors or not, if not won't mention it. Same for fire alarms-->
-  - *(optional)* fire alarms (connected to all the firelocks in the room)
+  - *(Optional)* air sensors (the components above already act as them.)
+  - *(Optional)* fire alarms (connected to all the firelocks in the room)
   - Linking can be done manually with a multitool (**MAKE SURE TO DESTROY SAID MULTITOOL OR CLEAR IT'S NETWORK BEFORE SAVING THE GRID** (it will make invalid pop up in the ship.yml file))
 * Colored pipe networks (done with the command below)
-  - #99000 for waste
+  - #990000 for waste
   - #0055CC for distro <!-- [R] I've typed these from the top of my head, if we want to ever change these LMK -->
 
 ```admonish info
@@ -153,10 +153,10 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
 *Meta*
 * Warp Point (for ghost spectator reasons) <!-- [R] Can't we achieve the same with upstream station beacons ? I'll look into it but lmk if you got an answer -->
 * Latejoin spawn point - Keep in a crew/habitable area! <!-- [R] I'd like to do away with this down the line and replace with cryopods, also wallmounted cryopods for smaller ships, possibly. Consequently moving it to generic ship comps. -->
-<!-- [R] BecomeStation component is automatically added when purchasing a grid. I'm looking into making the same happen for Roof -->
+<!-- BecomeStation component is automatically added when purchasing a grid. I'm looking into making the same happen for Roof -->
 * RoofComponent on your grid (done via F7 objects menu, same way you add BecomesStation. Add the roof enabled/disabled markers to all tiles you want to not be affected by planet lighting (such as desert planet).)
 * No Roof markers on external areas (for expedition lighting namely) <!-- [R] Tell me if I'm wrong on that, I know Snowth talked about this -->
-* Vacuum fix markers on all tiles that will be spaced! This includes diagonals. <!-- [R] We need a proper talk about this. Chek https://github.com/Monolith-Station/mono-docs/pull/18 for arguments for & against -->
+* Vacuum markers on enclosed spaces that are meant to be spaced (like atmos burn chambers & fully spaced ships <!-- [R] We need a proper talk about this. Chek https://github.com/Monolith-Station/mono-docs/pull/18 for arguments for & against -->
 
 ## Combat Requirements
 *All Vessels*
