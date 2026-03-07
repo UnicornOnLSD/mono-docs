@@ -23,13 +23,16 @@ When PRing the replacement of a ship, you must also include an image of the prev
 When PRing a tweak of an existing ship, you must also include an image of the ship BEFORE modifications. This applies for radar signature too, if changed at all in major ways (through markings)
 
 To render ship images use the following command:
+```admonish info
 dotnet run --project Content.MapRenderer Resources/Maps/_Mono/Shuttles/
-
+```
 Keep in mind that:
 * It can be used for multiple ships
 * It only works for ships in the Resources folder
-* Saved ships are located in 
-
+* Saved ships are located in:
+```admonish info
+bin/Content.MapRenderer/Content.MapRenderer
+```
 ## General Guidelines
 When mapping a ship, the most important part is keeping it consistent. Whatever you do make sure it stays consistent accross all the ship for the player's immersion.
 It is **heavily recommended to consult a maintainer on whether your ship idea will be accepted**, or periodically during the process of creating it. **Making a ship flawed at its core will waste both your time remaking it and our time reviewing it.**
@@ -48,12 +51,7 @@ It is **heavily recommended to consult a maintainer on whether your ship idea wi
   -  This can be achieved with decals, good hull profiling, greeble, among other things. 
   -  If you make a ship (especially as a replacement for an existing vessel), it must look better and fit the setting. (Put effort in with making decals! Good decals define a stellar vessel and make a bad one good!)
 * Vessels should follow design standards for whatever (minor) faction they belong to!
-  <!-- [R] feeling like we could try and be more specific while giving either factions their distinct style
-       Something like:
-       - TSF high tech: medium armor but shields & energy focused weapons
-       - PDV low tech: good armor & ballistic focus but no shields -->
-    -  For the TSF: Ships should be strong, well armed, and embrace the miltech vibe of the Federation. Inside, they should feel like they were made by a modern military - but like a military, feel built to function, not form, leading to cramped and mechanical insides. More public/important areas can be made prettier (e.g bridge, dorms, etc)
-    -  For the PDV: Ships should be moderately armed, and should embrace the vibe of “ancient design made more modern.” After all, the Dynasty has many ancient blueprints. To this end, vessels should feel practical but old - cramped miltech like the TSF, but with more rust/debris/decay and inconvenient layouts.
+    -  For TSF & PDV, redirect yourself to the faction ship guidelines
     -  Mercenary vessels are not as limited in style, but whatever theme you choose for your vessel, it should remain consistent across the hull and be coherent - it should still look good!
 * Remember to put tiling underneath your doors, and keep all floors under walls as plating (not lattice)!
   - This can be done by running the "tilewalls" command <!-- TODO verify the command -->
