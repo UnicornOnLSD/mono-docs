@@ -108,7 +108,7 @@ Only to this if you can handle modifying a yml map file. YOu can change the targ
 * Power storage
   - SMES/Advanced SMES (Advanced allowed on a case by case basis, make sure it's consistent with the ship's style.)
   - At least one substation, consider multiple for large ships
-  - APCs for each room (multiple for powering shields if applicable)
+  - APCs for each room, small ships may deviate from that rule (multiple for powering shields if applicable)
 * Functional power networking, avoid wiring under walls, exceptions are:
   - Wiring wallmounted APC/Substation
   - Wiring external ship components (thrusters namely)
@@ -186,6 +186,19 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
 ## Economy Functionality Requirements
 These are general requirments for ship designation. Feel free to lightly deviate from them if you think this serves the spirit of the ship. (doing so doesn't guarantee approval)
 
+*Cargo:*
+* Large empty cargo bay(s) with easy access to docks (Optional: With conveyor belts)
+* 5 wide dock with flaps (See standard cargo dock, look at other cargo ships/trade docks)
+* Autolathe (optional)
+
+*Salvage:*
+* Ore processor (for a faction mining ship, this can be industrial)
+* Cargo/EVA bay to space (blast doors or external airlock)
+* Filled salvage specialist locker
+* Salvage suit storage (salv hardsuit, salv EVA, mining hardsuit)
+* Ore box/Construction box (optional)
+* Salvage techfab (optional)
+
 *Medical:*
 * Medical bed
 * Stasis bed
@@ -198,6 +211,15 @@ These are general requirments for ship designation. Feel free to lightly deviate
 * Medical techfab
 * Bank ATM (Withdraw, normal kind for large enough vessels)
 
+*Advanced medical:*
+* Biofabricator
+* Cloning pod
+* Medical scanner
+* Cloning computer
+* Biomass recycler, in a morgue
+* Morgue with a drain
+* Cryopod setup (Guidebook layout works, make sure whatever you use works!)
+
 *Chemistry:*
 * Sink (one with water)
 * Drain
@@ -209,20 +231,7 @@ These are general requirments for ship designation. Feel free to lightly deviate
 * Chemical dispenser (filled)
 * Chemmaster
 
-*Salvage:*
-* Ore processor (for a faction mining ship, this can be industrial)
-* Cargo/EVA bay to space (blast doors or external airlock)
-* Filled salvage specialist locker
-* Salvage suit storage (salv hardsuit, salv EVA, mining hardsuit)
-* Ore box/Construction box (optional)
-* Salvage techfab (optional)
-
-*Cargo:*
-* Large empty cargo bay(s) with easy access to docks (Optional: With conveyor belts)
-* 5 wide dock with flaps (See standard cargo dock, look at other cargo ships/trade docks)
-* Autolathe (optional)
-
-*Xenoarch (arti science)*
+*Xenoarch (Science)*
 * Analysis console
 * Analysis pad
 * Dedicated artifact chamber, with a directional fan dividing it from main atmos - should have a blast door to space toggleable from outside
@@ -234,15 +243,6 @@ These are general requirments for ship designation. Feel free to lightly deviate
 * Protolathe
 * Circuit imprinter
 * Arti chamber is permitted to use plastitanium walls/windows, even if it is a civilian vessel
-
-*Advanced medical:*
-* Biofabricator
-* Cloning pod
-* Medical scanner
-* Cloning computer
-* Biomass recycler, in a morgue
-* Morgue with a drain
-* Cryopod setup (Guidebook layout works, make sure whatever you use works!)
 
 *Kitchen:*
 * Electric range
@@ -257,6 +257,7 @@ These are general requirments for ship designation. Feel free to lightly deviate
 * Chefvend
 * Plasteel Chef vender
 * If you have a walk in freezer, put a meat spike in it (and a freezer container)
+
 
 **Scrapyard Guidelines**
 Scrapyard ships are ships that are "flying shit boxes" in spirit. 
