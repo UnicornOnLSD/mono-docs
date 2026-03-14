@@ -184,7 +184,8 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
   - Directional fans under all external airlocks
   - Airlock intermediate space (Airlock doors should bolt each other when the opposite door is open!)
 * Thrusters in all four directions 
-  - When placing them, make them look like they are part of the hull, not hanging out <!-- Insert image below -->
+  - When placing them, make them look like they are part of the hull, not hanging out. See non-exhaustive example below
+  ![alt_text](https://github.com/Monolith-Station/mono-docs/blob/master/src/en/assets/_Mono/images/mapping/thrusterPlacementExamples.png?raw=true)
   - Unless the ship has a gimmick in mind (like strafing or omnidirectionnal), you should focus on main thrust.
   - You can protected thrusters with grilles
   - Keep the exhaust zone of thrusters except for the above scenario. 3 tiles of free space for regular thrusters & 7 for large thrusters.
