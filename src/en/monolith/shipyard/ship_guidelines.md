@@ -8,21 +8,15 @@ This page is meant to be a comprehensive list of all that is **mandatory** and *
 
 Maintainers are free to ignore these guidelines on case by case basis for the better of the game.
 
-**FAILURE TO MEET AND REFER TO MANDATORY GUIDELINES BY AN AUTHOR IS LIABLE FOR CLOSING THEIR SHIP PR.**
+## Note for ship-related Pull Requests
+When making a ship for monolith, you should either:
+* Refer to the roster and find a ship in need of replacement (https://docs.google.com/spreadsheets/d/1ctDT4RYRnZuVcet2SACvqsYBT10T-dikHxEg6v9SZiU/edit?usp=sharing)
+* Ask a maintainer if your ship idea fits in the game
 
-### Preface: Recommendations
-
-Do not start your mapping journey with a large vessel/important POI! It will only waste you and maintainer’s time, embark on large projects at your own risk - Make sure you have a solid understanding of mapping requirements and methods! 
-It is not maintainer responsibility to fix your PR!
-
-Before beginning to actually map a ship, make sure you already have an understanding of what you wish to make, and whether it is something that players want or will use. 
-If there are five different cargo ships, don’t make another cargo ship, unless you’re trying to replace an existing one! (Look in the Ship Roster section for pre-existing ships!)
-
-Once all of that is done, feel free to take a look at current in game ships for inspiration and mapping techniques !
-
-### Important note for ship PRs
-
-When PRing a new ship, you must always include what kind of niche it fills (in other words, consider why would anyone ever buy your ship) & an image of the ship and ships's radar signature <!-- Possibly make people fill the roster.md bit as well, it would greatly help us track our current ship composition -->
+When PRing a new ship, you must always include:
+* what kind of niche it fills (in other words, consider why would anyone ever buy your ship)
+* An image of the ship
+* It's radar signature (how it looks on a mass scanner).
 
 When PRing the replacement of a ship, you must also include an image of the previous ship you're replacing atop of the above requirements.
 
@@ -39,6 +33,20 @@ Keep in mind that:
 ```admonish info
 bin/Content.MapRenderer/Content.MapRenderer
 ```
+
+#### Repeated failure to follow or refer to guidelines makes one's PR liable to be closed.
+
+### Recommendations
+
+Do not start your mapping journey with a large vessel/important POI! It will only waste you and maintainer’s time, embark on large projects at your own risk - Make sure you have a solid understanding of mapping requirements and methods! 
+It is not maintainer responsibility to fix your PR!
+
+Before beginning to actually map a ship, make sure you already have an understanding of what you wish to make, and whether it is something that players want or will use. 
+If there are five different cargo ships, don’t make another cargo ship, unless you’re trying to replace an existing one! (Look in the Ship Roster section for pre-existing ships!)
+
+Once all of that is done, feel free to take a look at current in game ships for inspiration and mapping techniques !
+
+
 ## General Guidelines
 When mapping a ship, the most important part is keeping it consistent. Whatever you do make sure it stays consistent accross all the ship for the player's immersion.
 It is **heavily recommended to consult a maintainer on whether your ship idea will be accepted**, or periodically during the process of creating it. **Making a ship flawed at its core will waste both your time remaking it and our time reviewing it.**
@@ -81,7 +89,7 @@ tilewalls
 * Shields are in an interesting place - keep their effects in mind, and if you have one, make sure it has enough power! Power supply = shield durability, and they are mostly limited by APC capacity. Be careful, high-end shields may need 2 APCs.
 
 ## Fundamental Requirements
-**The list below is a checklist of hard requirements. Only scrapyard ships are exempt.**
+**The list below is a checklist of hard requirements. Only scrapyard ships and non player controlled ships are exempt.**
 
 
 *Communications/Control*
@@ -99,7 +107,8 @@ tilewalls
   - Jr.DK, DK, Z-pinch
   - **NO singularity/tesla**
 
-Only to this if you can handle modifying a yml map file. YOu can change the targetted power output by adding the targetPower parametere like in the example below
+*Only do this if you can handle modifying a yml map file.* 
+You can change the targetted power output by adding the targetPower parametere like in the example below
 ```admonish info
 - type: FuelGenerator
   targetPower: 29000
@@ -160,6 +169,8 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
 
 *External ship components*
 * Exterior walls should be “reinforced” (plasteel) walls
+* Follow the below example when placing walls under plating. For what is allowed, allowed on a case by case basis & forbidden
+  [Insert image]
 * External airlocks & docking ports
   - Exterior doors should either be docks or “external” airlocks
   - Directional fans under all external airlocks
@@ -173,6 +184,7 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
    - Small ships: Only allowed for main thrust
    - Medium & below: Only allowed for opposing directions. I.E left/right or front/back. (See the RSC Scallywag, it's a great example of that rule.)
    - Large & above: All directions allowed
+* Integrate your thrusters properly into the hull ! Follow the below example for what is allowed, allowed on a case by case basis & forbidden
 * Reinforced hull plating under ship guns & thrusters (necessary so they aren't shot off easily)
   - Decal or catwalk on top for aesthetics
 
@@ -183,6 +195,81 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
 * No Roof markers on external areas (for expedition lighting namely) 
 * Vacuum markers on enclosed spaces that are meant to be spaced (like atmos burn chambers & fully spaced ships)
 
+# Combat guidelines
+## Ship gun usage & gunnery server ruling
+*  **Keep the armament consistant**. Non exhaustive examples below:
+    - High tech ships use laser mounts, light and directionnal armor, shields
+	- Low tech ships use ballistic mounts, and heavy armor
+* Gunnery server (power of the server depending on ship size)
+  - Small: low 
+  - Medium: medium & below
+  - Large: high & below
+  - Capital: ultra high & below by default. **Liable to exceptions on a case by case basis (discuss with maintainers).**
+
+* EMP gun mounts
+   - should be used to fill specific niche (like a boarding vessel, interceptor police craft etc..) 
+## Combat requirements
+*All Vessels*
+* Gunnery console, same orientation as Shuttle Console  
+* All shuttles should have some kind of armament. For civ ships, a couple L85s is fine.
+* Do Not Over-supply ships - keep personnel armament to a minimum, and at most provide basic equipment - players can kit out their ships themselves! (An example is a beanbag kammerer, or a MK-58.)
+  
+*Non faction military ships*
+* Dedicated combat ships should be filling a unique niche in combat
+* Combat ships should also have some kind of “economy” purpose for downtime
+   - cargo bays, small R&D, chemistry, anything so long as it does not outvalue a vessel dedicated to such economy.
+
+## Scrapyard Guidelines
+Scrapyard ships are ships that are "flying shit boxes" in spirit. 
+**This means that a ship not meeting guidelines, only to brand it as scrapyard later for it to pass review will get it merged. Scrapyard ships should be pretty shit boxes.**
+
+*In addition to normal guidelines:*
+
+* Scrapyard ships can ignore QoL-related mapping guidelines (you can omit atmos, defib, etc).
+* Having design flaws is encouraged.
+* The ship should still be usable for some purpose, or be easily retrofittable for that. It should be something people would have reason to buy at least rarely, or to have fun with.
+* Ships should not require any extra repairs or gear to be safely usable, or come with any required gear, like a radsuit if the ship is entirely irradiated. EVA suits or hazards contained to specific rooms are exempt.
+* Ships should be scrappy in at least a somewhat realistic way. Your ship should look like something someone actually built, even if it was built out of scrap and long enough ago for it to have rusted.
+* Ships should still fit visual standards and look fitting for the server. Leeway is allowed, but not too much.
+* Ships can, and are encouraged to, have experimental nonstandard features (example: disposal chute item cannon).
+
+## Carrier Guidelines
+### Carriers
+* Gunnery server (power of the server depending on ship size)
+  - Medium: low
+  - Large: medium & below
+  - Capital: high & below by default. **Liable to exceptions on a case by case basis (discuss with maintainers).**
+* Armaments should have a defensive focus (point defense, long range weaponry)
+* Multiple docks for drones & fighters
+
+### Fighters
+This refers to smaller shuttles meant to be manned by player controlled crew bought on carriers.
+* Thruster guidelines are relaxed to amount for the small space
+* Size Micro/Small only
+* Low power gunnery server **ONLY** <!-- todo make fighter gunnery server -->
+
+### AI fighter drones
+* Thruster guidelines are relaxed to amount for the small space
+* Low power gunnery server **ONLY** <!-- todo make fighter gunnery server -->
+* No life support
+* No gravity
+* No IFF console
+* APU/RTG power only
+
+## ADS guidelines
+ADS ships are as of 14th of March 2026 in a nebulous state in monolith. Ask a maint before starting to map one ! 
+*Mandatory*
+* No gravity
+* No life support
+* AI core
+* Borg spawnpoint & recharging station
+* External access (no dock, only external !
+* No IFF console <!-- todo adjust iff system for ADS -->
+
+*Armaments*
+* Curio weapon set
+* Heavy armor (plastitanium/nanolaminate)
+  
 ## Economy Functionality Requirements
 These are general requirments for ship designation. Feel free to lightly deviate from them if you think this serves the spirit of the ship. (doing so doesn't guarantee approval)
 
@@ -257,47 +344,6 @@ These are general requirments for ship designation. Feel free to lightly deviate
 * Chefvend
 * Plasteel Chef vender
 * If you have a walk in freezer, put a meat spike in it (and a freezer container)
-
-
-**Scrapyard Guidelines**
-Scrapyard ships are ships that are "flying shit boxes" in spirit. 
-**This means that a ship not meeting guidelines, only to brand it as scrapyard later for it to pass review will get it merged. Scrapyard ships should be pretty shit boxes.**
-
-*In addition to normal guidelines:*
-
-* Scrapyard ships can ignore QoL-related mapping guidelines (you can omit atmos, defib, etc).
-* Having design flaws is encouraged.
-* The ship should still be usable for some purpose, or be easily retrofittable for that. It should be something people would have reason to buy at least rarely, or to have fun with.
-* Ships should not require any extra repairs or gear to be safely usable, or come with any required gear, like a radsuit if the ship is entirely irradiated. EVA suits or hazards contained to specific rooms are exempt.
-* Ships should be scrappy in at least a somewhat realistic way. Your ship should look like something someone actually built, even if it was built out of scrap and long enough ago for it to have rusted.
-* Ships should still fit visual standards and look fitting for the server. Leeway is allowed, but not too much.
-* Ships can, and are encouraged to, have experimental nonstandard features (example: disposal chute item cannon).
-
-
-# Combat ruling
-## Ship gun usage & gunnery server ruling
-*  **Keep the armament consistant**. Non exhaustive examples below:
-    - High tech ships use laser mounts, light and directionnal armor, shields
-	- Low tech ships use ballistic mounts, and heavy armor
-* Gunnery server (power of the server depending on ship size)
-  - Small: low 
-  - Medium: medium & below
-  - Large: high & below
-  - Capital: ultra high & below by default. **Liable to exceptions on a case by case basis (discuss with maintainers).**
-
-* EMP gun mounts
-   - should be used to fill specific niche (like a boarding vessel, interceptor police craft etc..) 
-## Combat requirements
-*All Vessels*
-* Gunnery console, same orientation as Shuttle Console  
-* All shuttles should have some kind of armament. For civ ships, a couple L85s is fine.
-* Do Not Over-supply ships - keep personnel armament to a minimum, and at most provide basic equipment - players can kit out their ships themselves! (An example is a beanbag kammerer, or a MK-58.)
-  
-*Non faction military ships*
-* Dedicated combat ships should be filling a unique niche in combat
-* Combat ships should also have some kind of “economy” purpose for downtime
-   - cargo bays, small R&D, chemistry, anything so long as it does not outvalue a vessel dedicated to such economy.
-
 
 
 
