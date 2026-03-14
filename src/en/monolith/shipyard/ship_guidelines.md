@@ -23,6 +23,7 @@ When PRing the replacement of a ship, you must also include an image of the prev
 When PRing a tweak of an existing ship, you must also include an image of the ship BEFORE modifications. This applies for radar signature too, if changed at all in major ways (through markings)
 
 To render ship images use the following command:
+
 ```admonish info
 dotnet run --project Content.MapRenderer Resources/Maps/_Mono/Shuttles/your_shuttle.yml
 ```
@@ -30,6 +31,7 @@ Keep in mind that:
 * It can be used for multiple ships
 * It only works for ships in the Resources folder
 * Saved ships are located in:
+
 ```admonish info
 bin/Content.MapRenderer/Content.MapRenderer
 ```
@@ -69,6 +71,7 @@ It is **heavily recommended to consult a maintainer on whether your ship idea wi
     -  Mercenary vessels are not as limited in style, but whatever theme you choose for your vessel, it should remain consistent across the hull and be coherent - it should still look good!
 * Remember to put tiling underneath your doors
 * Keep all floors under walls as plating (not lattice), which can be done instantly by running the command below
+
 ```admonish info
 tilewalls
 ```
@@ -109,10 +112,12 @@ tilewalls
 
 *Only do this if you can handle modifying a yml map file.* 
 You can change the targetted power output by adding the targetPower parametere like in the example below
+
 ```admonish info
 - type: FuelGenerator
   targetPower: 29000
 ```
+
 * Wall fuel locker/rack with fuel for your power source of choice
 * Power storage
   - SMES/Advanced SMES (Advanced allowed on a case by case basis, make sure it's consistent with the ship's style.)
@@ -125,9 +130,11 @@ You can change the targetted power output by adding the targetPower parametere l
 *Atmospherics* <!-- TODO This part will need a solid amount of images to illustrate, since it's taught nowhere it's meant to be both guidelines and a guide-->
 
 * Running the command below to instantly fill the inside of the ship with the regular air mix
+
 ```admonish info
 "fixgridatmos [grid ID (you can tabulate to get it instantly)]
 ```
+
 * Piping
   - Avoid piping under walls (exception is linking the waste passive vent to the outside of the ship)
   - Make use of the Atmos piping layer system (You can screwdrive scrubbers & vents to change their layer, select the pipe through the spawn menu to trigger layered placement) <!-- image needed -->
@@ -155,6 +162,7 @@ You can change the targetted power output by adding the targetPower parametere l
 ```admonish info
 colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color hex code (ex: #99000)]
 ```
+
   The command automatically colors the entire connected pipe network, try to use it when you're finished laying it down.
  
 *Internal ship components*
