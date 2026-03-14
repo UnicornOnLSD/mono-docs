@@ -36,7 +36,7 @@ Keep in mind that:
 bin/Content.MapRenderer/Content.MapRenderer
 ```
 
-#### Repeated failure to follow or refer to guidelines makes one's PR liable to be closed.
+**Repeated failure to follow or refer to guidelines makes one's PR liable to be closed.**
 
 ### Recommendations
 
@@ -49,7 +49,7 @@ If there are five different cargo ships, don’t make another cargo ship, unless
 Once all of that is done, feel free to take a look at current in game ships for inspiration and mapping techniques !
 
 
-## General Guidelines
+# General Guidelines
 When mapping a ship, the most important part is keeping it consistent. Whatever you do make sure it stays consistent accross all the ship for the player's immersion.
 It is **heavily recommended to consult a maintainer on whether your ship idea will be accepted**, or periodically during the process of creating it. **Making a ship flawed at its core will waste both your time remaking it and our time reviewing it.**
 
@@ -243,8 +243,8 @@ Scrapyard ships are ships that are "flying shit boxes" in spirit.
 * Ships should still fit visual standards and look fitting for the server. Leeway is allowed, but not too much.
 * Ships can, and are encouraged to, have experimental nonstandard features (example: disposal chute item cannon).
 
-## Carrier Guidelines
-### Carriers
+# Carrier Guidelines
+## Carriers
 * Gunnery server (power of the server depending on ship size)
   - Medium: low
   - Large: medium & below
@@ -252,13 +252,13 @@ Scrapyard ships are ships that are "flying shit boxes" in spirit.
 * Armaments should have a defensive focus (point defense, long range weaponry)
 * Multiple docks for drones & fighters
 
-### Fighters
+## Fighters
 This refers to smaller shuttles meant to be manned by player controlled crew bought on carriers.
 * Thruster guidelines are relaxed to amount for the small space
 * Size Micro/Small only
 * Low power gunnery server **ONLY** <!-- todo make fighter gunnery server -->
 
-### AI fighter drones
+## AI fighter drones
 * Thruster guidelines are relaxed to amount for the small space
 * Low power gunnery server **ONLY** <!-- todo make fighter gunnery server -->
 * No life support
@@ -266,7 +266,7 @@ This refers to smaller shuttles meant to be manned by player controlled crew bou
 * No IFF console
 * APU/RTG power only
 
-## ADS guidelines
+# ADS guidelines
 ADS ships are as of 14th of March 2026 in a nebulous state in monolith. Ask a maint before starting to map one ! 
 *Mandatory*
 * No gravity
@@ -280,7 +280,7 @@ ADS ships are as of 14th of March 2026 in a nebulous state in monolith. Ask a ma
 * Curio weapon set
 * Heavy armor (plastitanium/nanolaminate)
 
-## Size & niches
+# Size & niches
 
 *Size*
 * Small: Small, up to discretion - but usually ~10x20 tiles large.
