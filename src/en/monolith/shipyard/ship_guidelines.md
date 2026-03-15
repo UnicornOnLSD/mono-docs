@@ -272,7 +272,7 @@ ADS ships are as of 14th of March 2026 in a nebulous state in monolith. Ask a ma
 * No gravity
 * No life support
 * AI core
-* Borg spawnpoint & recharging station
+* Borg spawnpoint
 * External access (no dock, only external !
 * No IFF console <!-- todo adjust iff system for ADS -->
 
