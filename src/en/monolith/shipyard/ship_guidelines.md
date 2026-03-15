@@ -133,7 +133,7 @@ You can change the targetted power output by adding the targetPower parametere l
 * Running the command below to instantly fill the inside of the ship with the regular air mix
 
 ```admonish info
-"fixgridatmos [grid ID (you can tabulate to get it instantly)]
+fixgridatmos [grid ID (you can tabulate to get it instantly)]
 ```
 
 * Piping
