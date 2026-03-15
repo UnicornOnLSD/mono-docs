@@ -10,7 +10,7 @@ Maintainers are free to ignore these guidelines on case by case basis for the be
 
 ## Note for ship-related Pull Requests
 When making a ship for monolith, you should either:
-* Refer to the roster and find a ship in need of replacement (https://docs.google.com/spreadsheets/d/1ctDT4RYRnZuVcet2SACvqsYBT10T-dikHxEg6v9SZiU/edit?usp=sharing)
+* Refer to the [roster](https://docs.google.com/spreadsheets/d/1ctDT4RYRnZuVcet2SACvqsYBT10T-dikHxEg6v9SZiU/edit?usp=sharing) and find a ship in need of replacement
 * Ask a maintainer if your ship idea fits in the game
 
 When PRing a new ship, you must always include:
@@ -178,14 +178,14 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
 *External ship components*
 * Exterior walls should be “reinforced” (plasteel) walls
 * Follow the below example when placing walls under plating. For what is allowed, allowed on a case by case basis & forbidden
-  ![alt text](https://github.com/Monolith-Station/mono-docs/blob/master/src/en/assets/_Mono/images/mapping/exteriorTileRuling.png?raw=true)
+  ![image](exteriorTileRuling.png)
 * External airlocks & docking ports
   - Exterior doors should either be docks or “external” airlocks
   - Directional fans under all external airlocks
   - Airlock intermediate space (Airlock doors should bolt each other when the opposite door is open!)
 * Thrusters in all four directions 
   - When placing them, make them look like they are part of the hull, not hanging out. See non-exhaustive example below
-  ![alt_text](https://github.com/Monolith-Station/mono-docs/blob/master/src/en/assets/_Mono/images/mapping/thrusterPlacementExamples.png?raw=true)
+  ![image](thrusterPlacementExamples.png)
   - Unless the ship has a gimmick in mind (like strafing or omnidirectionnal), you should focus on main thrust.
   - You can protected thrusters with grilles
   - Keep the exhaust zone of thrusters except for the above scenario. 3 tiles of free space for regular thrusters & 7 for large thrusters.
@@ -194,7 +194,7 @@ colornetwork [Pipe ID (you can see it by right clicking the pipe)] Pipe [color h
    - Medium & below: Only allowed for opposing directions. I.E left/right or front/back. (See the RSC Scallywag, it's a great example of that rule.)
    - Large & above: All directions allowed
 * Integrate your thrusters properly into the hull ! Follow the below example for what is allowed, allowed on a case by case basis & forbidden
-  ![alt text](https://github.com/Monolith-Station/mono-docs/blob/master/src/en/assets/_Mono/images/mapping/largeThrusterRuling.png?raw=true)
+  ![image](largeThrusterRuling.png)
 * Reinforced hull plating under ship guns & thrusters (necessary so they aren't shot off easily)
   - Decal or catwalk on top for aesthetics
 
