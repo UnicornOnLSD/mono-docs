@@ -17,7 +17,8 @@ Monolith
 ===================
 
 ----------------------
-
+- [Contribution](en/monolith/contribution.md)
+  - [Spriting](en/monolith/contribution/spriting.md)
 - [Shipyard](en/monolith/shipyard.md)
   - [Faction Ship Design](en/monolith/shipyard/faction_guidelines.md)
   - [Ship Guidelines](en/monolith/shipyard/ship_guidelines.md)
